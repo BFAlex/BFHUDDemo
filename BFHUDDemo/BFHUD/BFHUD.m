@@ -11,14 +11,17 @@
 @implementation BFHUD
 
 + (void)show {
+    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
     [SVProgressHUD show];
 }
 
 + (void)showMessage:(NSString *)message {
+    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
     [SVProgressHUD showWithStatus:message];
 }
 
 + (void)showMessage:(NSString *)message forTimeInterval:(NSTimeInterval)delay {
+    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
     [self showMessage:message];
     [SVProgressHUD dismissWithDelay:delay];
 }
