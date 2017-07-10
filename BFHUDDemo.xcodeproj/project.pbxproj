@@ -16,6 +16,7 @@
 		A8F0D8FD1F131AD900358EA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8F0D8FB1F131AD900358EA1 /* LaunchScreen.storyboard */; };
 		A8F0D9081F131AD900358EA1 /* BFHUDDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F0D9071F131AD900358EA1 /* BFHUDDemoTests.m */; };
 		A8F0D9131F131ADA00358EA1 /* BFHUDDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F0D9121F131ADA00358EA1 /* BFHUDDemoUITests.m */; };
+		A8F0D9231F131DBA00358EA1 /* BFHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F0D9221F131DBA00358EA1 /* BFHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		A8F0D90E1F131AD900358EA1 /* BFHUDDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BFHUDDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8F0D9121F131ADA00358EA1 /* BFHUDDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFHUDDemoUITests.m; sourceTree = "<group>"; };
 		A8F0D9141F131ADA00358EA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8F0D9211F131DBA00358EA1 /* BFHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFHUD.h; sourceTree = "<group>"; };
+		A8F0D9221F131DBA00358EA1 /* BFHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFHUD.m; sourceTree = "<group>"; };
 		CF15FDE410598A28FFACFFFC /* libPods-BFHUDDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BFHUDDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFD3571EA7FD6FE05BB5CED7 /* Pods-BFHUDDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BFHUDDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BFHUDDemo/Pods-BFHUDDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,6 +132,7 @@
 		A8F0D8EC1F131AD900358EA1 /* BFHUDDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A8F0D9201F131D7000358EA1 /* BFHUD */,
 				A8F0D8F01F131AD900358EA1 /* AppDelegate.h */,
 				A8F0D8F11F131AD900358EA1 /* AppDelegate.m */,
 				A8F0D8F31F131AD900358EA1 /* ViewController.h */,
@@ -166,6 +170,15 @@
 				A8F0D9141F131ADA00358EA1 /* Info.plist */,
 			);
 			path = BFHUDDemoUITests;
+			sourceTree = "<group>";
+		};
+		A8F0D9201F131D7000358EA1 /* BFHUD */ = {
+			isa = PBXGroup;
+			children = (
+				A8F0D9211F131DBA00358EA1 /* BFHUD.h */,
+				A8F0D9221F131DBA00358EA1 /* BFHUD.m */,
+			);
+			path = BFHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,6 +371,7 @@
 				A8F0D8F51F131AD900358EA1 /* ViewController.m in Sources */,
 				A8F0D8F21F131AD900358EA1 /* AppDelegate.m in Sources */,
 				A8F0D8EF1F131AD900358EA1 /* main.m in Sources */,
+				A8F0D9231F131DBA00358EA1 /* BFHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

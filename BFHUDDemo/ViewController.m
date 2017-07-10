@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "BFHUD.h"
 
 @interface ViewController ()
 
@@ -19,11 +20,22 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+#pragma mark - Action
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)actionShowHUD:(UIButton *)sender {
+    [BFHUD show];
 }
 
+- (IBAction)actionShowHUDWithMessage:(UIButton *)sender {
+    [BFHUD showMessage:@"show what you want to show"];
+}
+
+- (IBAction)actionShowHUDForTime:(UIButton *)sender {
+    [BFHUD showMessage:@"show what you want to show" forTimeInterval:2];
+}
+
+- (IBAction)actionDismissHUD:(UIButton *)sender {
+    [BFHUD dismiss];
+}
 
 @end
